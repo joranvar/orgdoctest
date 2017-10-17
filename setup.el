@@ -15,6 +15,8 @@
 
 (require 'use-package)
 (setq use-package-always-ensure t)
-
+(org-babel-do-load-languages 'org-babel-load-languages '((plantuml . t)))
 (use-package htmlize)
+(setq org-confirm-babel-evaluate nil)
+(setq org-plantuml-jar-path "/usr/share/plantuml/plantuml.jar")
 ;;; setup.el ends here
