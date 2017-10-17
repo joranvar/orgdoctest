@@ -1,0 +1,8 @@
+#+TITLE: Test document
+
+#+BEGIN_SRC plantuml :file test.png
+class MyClass {
+  +Key
+  #Method()
+}
+#+END_SRC
