@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Generate
+          command: emacs -Q --batch --eval '(progn (find-file "doc/Test.org")(org-html-export-as-html))'
